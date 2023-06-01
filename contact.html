@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+        integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <script src="script.js"></script>
+    <title>Contact</title>
+</head>
+
+<body>
+    <div class="main-container">
+        <header class="main-header">
+            <span id="toggle-btn">
+                <i class="fa fa-bars"></i>
+            </span>
+        </header>
+        <main class="main-section">
+            <nav class="navbar" id="nav">
+                <ul>
+                    <li><a href="/">Home</a></li>
+                    <li><a href="/approach.html">Approach</a></li>
+                    <li><a href="/work.html">Work</a></li>
+                    <li><a href="/people.html">People</a></li>
+                    <li><a href="/job.html">Jobs</a></li>
+                    <li><a href="/blog.html">Blog</a></li>
+                    <li><a href="/contact.html">Contact</a></li>
+
+                </ul>
+            </nav>
+            <div class="main-content">
+                <h1>Contact</h1>
+                <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. A aut, optio suscipit at voluptate possimus
+                    rem repudiandae recusandae eveniet atque nobis quidem vero nihil nam tenetur ab facilis odio
+                    nostrum
+                    Lorem, ipsum dolor sit amet consectetur adipisicing elit. Modi iste, earum mollitia magni neque,
+                    numquam magnam eum fuga fugit quam ipsum quasi. Illum, odio. Optio corrupti temporibus quas impedit
+                    aut.
+                </p>
+                <button>See More</button>
+
+                <div class="column-section">
+                    <div class="left-column">
+                        <h3>Anonymous</h3>
+                        <img src="images/person.jpg" />
+                    </div>
+                    <div class="right-column">
+                        <h3>about me</h3>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Repellendus
+                            aliquid sint nihil accusamus facere provident fugit, at debitis dicta laboriosam veritatis
+                            quisquam ipsa recusandae error autem culpa rem distinctio libero.</p>
+
+                    </div>
+
+                </div>
+
+
+            </div>
+        </main>
+        <footer class="main-footer">
+        </footer>
+    </div>
+
+    <script>
+
+        const toggleBtn = document.getElementById('toggle-btn');
+        const nav = document.getElementById('nav');
+
+        const barsIcon = document.querySelector('.fa-bars');
+        const timesIcon = document.querySelector('.fa-times');
+        toggleBtn.addEventListener('click', () => {
+            const data = nav.classList.toggle('show');
+            if (data) {
+                timesIcon.classList.toggle('show-icon').style.display = "none";
+
+            }
+
+
+        })
+
+
+
+
+    </script>
+</body>
+
+</html>
